@@ -31,6 +31,12 @@ app.use('/day3_exo2', require('./routes/day3_exo2').day3Exo2Router);
 //DAY4
 app.use('/day4_exo1', require('./routes/day4_exo1').day4Exo1Router);
 app.use('/day4_exo2', require('./routes/day4_exo2').day4Exo2Router);
+//DAY5
+app.use('/day5_exo', require('./routes/day5_exo').day5ExoRouter);
+//DAY6
+app.use('/day6_exo', require('./routes/day6_exo').day6ExoRouter);
+//DAY6
+app.use('/day7_exo', require('./routes/day7_exo').day7ExoRouter);
 
 app.get("/*", function(req, res) {
     res.sendFile(__dirname + "/index.html");
